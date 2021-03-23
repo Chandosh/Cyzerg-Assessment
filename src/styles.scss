@@ -3,13 +3,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+$primary: green;
 .mat-list-base{
-    // padding: 10px;
-    // border-right: 1px solid grey;
-    // border-left: 1px solid grey;
-    // border-bottom: 1px solid grey;
     .mat-list-item {
-        color: #000;
+        color:black;
         border-top: 1px solid grey;
     }
 }
@@ -18,4 +16,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-right: 1px solid grey;
     border-left: 1px solid grey;
     border-bottom: 1px solid grey;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: black;
+}
+
+.pl-20 {
+    padding-left: 20px;;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: $primary;
+}
+
+.mat-chip.mat-standard-chip {
+    background-color: $primary;
 }

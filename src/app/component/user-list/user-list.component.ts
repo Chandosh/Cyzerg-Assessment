@@ -13,7 +13,7 @@ export class UserListComponent implements OnInit {
   searchKey: string;
   users: Array<User>;
   constructor(private userService: UserService) { 
-    this.checked = false;
+    this.checked = true;
     this.searchKey = '';
   }
 

@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     MatChipsModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    FlexLayoutModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
