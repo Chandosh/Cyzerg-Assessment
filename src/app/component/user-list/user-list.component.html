@@ -1,0 +1,27 @@
+
+<div fxLayout="column">
+<mat-form-field class="example-full-width" appearance="outline">
+    <mat-icon class="material-icons" matPrefix>search</mat-icon>
+    <input type="text" [(ngModel)]= "searchKey" (keyup)="filterUsers()" matInput placeholder="Search Users">
+</mat-form-field> <br>
+<mat-slide-toggle [color]="'primary'" [checked]="checked" (toggleChange)="changeUsers()">
+    Show Inactive Users
+</mat-slide-toggle>
+<mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let user of users">
+        <!-- <span fxLayout="row" fxFill fxLayoutAlign="space-around center">
+           <span> -->
+            {{user?.name}}
+           <!-- </span>
+           <span> -->
+            <mat-chip-list>
+                <mat-chip>
+                    <mat-icon class="material-icons">done</mat-icon>
+                    {{user?.isActive ? 'ACTIVE' : 'INACTIVE'}}
+                </mat-chip>
+            </mat-chip-list>
+            <!-- </span> 
+        </span>  -->
+    </mat-list-item>
+</mat-list>
+</div>
